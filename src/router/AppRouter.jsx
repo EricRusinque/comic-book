@@ -8,8 +8,8 @@ export const AppRouter = () => {
     return (
         <BrowserRouter>
             <h1 className='title'>ComicBook</h1>
-            <Routes  basename={process.env.PUBLIC_URL} >
-                <Route path='/' element={<IssuesScreen />} exact/>
+            <Routes  >
+                <Route path={process.env.PUBLIC_URL + '/'} element={<IssuesScreen />} exact/>
                 <Route path='issue/:issueId' element={<IssueScreen />} />
             </Routes>
         </BrowserRouter>
