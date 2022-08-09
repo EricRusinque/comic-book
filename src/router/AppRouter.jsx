@@ -9,7 +9,7 @@ export const AppRouter = () => {
         <BrowserRouter>
             <h1 className='title'>ComicBook</h1>
             <Routes  >
-                <Route path={process.env.PUBLIC_URL + '/'} element={<IssuesScreen />} exact/>
+                <Route path='/' element={<IssuesScreen />}/>
                 <Route path='issue/:issueId' element={<IssueScreen />} />
             </Routes>
         </BrowserRouter>
