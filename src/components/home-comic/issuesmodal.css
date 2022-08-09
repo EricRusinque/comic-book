@@ -1,0 +1,88 @@
+.ReactModalPortal > div{
+    opacity: 0;
+}
+
+.ReactModalPortal .ReactModal__Overlay {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transition: opacity .2s ease-in-out;
+    z-index: 999;
+}
+
+.modal-fondo {
+    background-color: rgba(0, 0, 0, 0.3);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: fixed;
+}
+
+.ReactModalPortal .ReactModal__Overlay--after-open {
+    opacity: 1;
+}
+
+.ReactModalPortal .ReactModal__Overlay--before-close {
+    opacity: 0;
+}
+
+.modal {
+    background: white;
+    border-radius: 5px;
+    color: rgb(51, 51, 51);
+    display: inline;
+    outline: none;
+    padding: 10px;
+    border: 1px solid black;
+    width: 45%;
+}
+.modal-details-container {
+    display: flex;
+  
+}
+.modal-details-container img{
+    width: 50%;
+    margin: 0.5rem;
+}
+.details-containers {
+    width: 50%;    
+}
+.modal-details-container div{
+    margin: 0.5rem;
+}
+.modal-details-container div h1{
+    border-bottom: 1px solid black;
+}
+
+
+.see-more {
+    color: black;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid rgb(164, 160, 160);
+    border-bottom: 1px solid rgb(164, 160, 160);
+    font-weight: bold;
+    z-index: 1;
+    background: linear-gradient(to top, white, #eee 100%,  #eee 100%, #333 100%);    
+    transition: all 1s ease;
+    text-align: center;
+}
+    .see-more:hover {
+        color: black;
+        cursor: pointer;
+        background: linear-gradient(to bottom, white, #eee 100%,  #eee 100%, #333 100%);    
+    
+    }
+.see-more a {
+    font-size: 25px;
+    color: black;
+    transition: all 1s ease;
+}   
+    .see-more a:hover {
+        border: 1px solid wheat;
+        color: rgb(179, 161, 129);
+    }
+@media (max-width: 850px) {
+
+}

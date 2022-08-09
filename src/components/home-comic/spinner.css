@@ -1,0 +1,66 @@
+.loader-wrapper {
+    margin-top: 10rem;
+    width: 10rem;
+    height: 10rem;
+    text-align: center;
+}
+.loader-wrapper span {
+    font-weight: bold;
+    font-size: 25px;
+}
+.loader {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border: 10px solid #161615;
+    border-top-color: #eee;
+    border-bottom-color: #eee;
+    border-radius: 50%;
+    animation: rotate 5s linear infinite;
+}
+
+.loader-inner {
+    border-top-color: #161615;
+    border-bottom-color: #eee;
+    animation-duration: 2.5s;
+}
+
+@keyframes rotate {
+    0%{
+        transform: scale(1) rotate(360deg);
+    }
+    50%{
+        transform: scale(0.8) rotate(-360deg);
+    }
+    100%{
+        transform: scale(1) rotate(360deg);
+    }
+}
+
+.spinner-span {
+    text-align: center;
+    color: #eee;
+    display: block;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 4pc solid;
+    width: 11ch;
+    filter: drop-shadow(7px 5px 12px rgb(71, 66, 66));
+    margin-bottom: 10px;
+    padding: 2px;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    border-left: 1px solid;
+  
+  
+    animation: typing 3s steps(12), blink .5s infinite step-end alternate;
+    overflow: hidden;
+  }
+  
+  @keyframes typing {
+    from { width:  0;}
+  }
+  
+  @keyframes blink {
+    50% { border-color: transparent }
+  }

@@ -1,0 +1,90 @@
+.issue__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.loader__issue-container {
+    display: flex;
+    justify-content: center;
+
+}
+.issue__details {
+    width: 50%;
+}
+
+.issue__container-concepts,
+.issue__container-teams,
+.issue__container-characters,
+.issue__container-locations{    
+    margin: 1rem;
+}
+
+.issue-title {
+    border-bottom: 1px solid #eee;
+}
+
+.issue-images-container {
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: bold;
+    font-size: 110%;
+    width: 100%;
+}
+.issue-images-details {
+    display: inherit;
+    align-items: center;
+    margin: 1rem 1rem 1rem 0rem;
+    width: 30%;
+}
+.issue-images-details img{
+    border: 1px solid #eee;
+    margin-right: 0.5rem;
+    width: 20%;
+}
+
+.return__btn {
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 120%;
+    top: 6rem;
+    color: #eee;
+    background-color: black;
+    padding: 20px 50px;
+    border: 3px solid #eee;
+    position: relative;
+}
+.return__btn::before,
+.return__btn::after {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: inherit;
+    transition: all .5s;
+}
+.return__btn::before {
+    top: -15px;
+    left: -15px;
+    border-width: 3px 0 0 3px;
+}
+.return__btn::after {
+    bottom: -15px;
+    right: -15px;
+    border-width: 0 3px 3px 0;
+}
+.return__btn:hover::before,
+.return__btn:hover::after {
+    width: calc(100% + 27px);
+    height: calc(100% + 27px);
+}
+
+.issue__image-container {
+    width: 50%;
+}
+
+.issue__image-container img {
+    margin: 1.5rem 5rem 0rem 2rem;
+    border: 1px solid #eee;
+    width: 70%;
+}

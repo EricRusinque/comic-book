@@ -1,0 +1,215 @@
+.issue-card-grid-container {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1rem 2rem 1rem;
+    margin: 1rem;
+    text-align: center;
+    height: 32rem;
+    transition: 0.8s ease-in-out;
+    border: 1px solid transparentt;
+    border-radius: 3px;
+    flex-direction: column;
+}
+
+    .issue-card-grid-container:hover {
+        animation: cardanimate 2s ease;
+
+    }
+
+@keyframes cardanimate {
+    0% {
+        transform: scale(1.04);
+    }
+    50% {
+        transform: scale(1.08);
+    }
+    100%{
+        transform: scale(1);
+    
+    }
+}
+
+.issue-image-grid-container {
+    padding: 1rem 1rem 2rem 1rem;
+    width: 15rem;
+    height: 30rem;
+    color: black;
+    border: 1px solid white;
+    border-bottom: none;
+    transition: all 1ms ease;
+    cursor: pointer;
+
+}
+    .issue-image-grid-container:hover {
+        background: linear-gradient(to bottom, white, #eee 100%,  #eee 100%, #333 100%);    
+        border-radius: 2px solid white;
+        border-bottom: none;
+        color: black;
+    }   
+
+
+
+.issue-grid-image{  
+    width: 15em;
+    height: 25rem;
+}
+
+.preview-grid-container {
+    border: 1px solid #eee;
+    width: 99.8%;
+}
+.preview-grid-container {
+    color: black;
+    border-bottom: 1px solid black;
+    width: 17rem;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid white;
+    font-weight: bold;
+    z-index: 1;
+}
+    .preview-grid-container:hover {
+        color: black;
+        cursor: pointer;
+        background: linear-gradient(to bottom, white, #eee 100%,  #eee 100%, #333 100%);    
+    }
+    .preview-grid-container a:hover {
+        color: black; 
+    }
+    .preview-grid-container a {
+        color: #eee;   
+    }
+
+/* List */
+
+.issue-card-list-container {
+    margin: 2rem;
+    border: 1px solid #eee;
+    width: 80%;
+    padding-top: 1rem;
+}
+
+    .issue-card-list-container:hover {
+        animation: cardanimate 2s ease;
+    }
+
+@keyframes cardanimate {
+    0% {
+        transform: scale(1.04);
+    }
+    50% {
+        transform: scale(1.08);
+    }
+    100%{
+        transform: scale(1);
+    
+    }
+}
+
+.issue-image-list-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 1ms ease;
+    cursor: pointer;
+
+}
+    .issue-image-list-container:hover {
+        background: linear-gradient(to bottom, white, #eee 100%,  #eee 100%, #333 100%);    
+        border-radius: 2px solid white;
+        border-bottom: none;
+        color: black;
+    }   
+
+
+
+.issue-list-image {
+    width: 30%;
+    margin: 1rem;
+    border: solid 1px #eee;
+}
+.issue-details-list{
+    width: 60%;
+    text-align: center;
+}
+.issue-details-list h3{
+    font-size: 150%;
+}
+
+.preview-list-container {
+    border-top: 1px solid #eee;
+    width: 99.8%;
+}
+.preview-list-container {
+    color: black;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    z-index: 1;
+    text-align: center;
+
+}
+    .preview-list-container:hover {
+        color: black;
+        cursor: pointer;
+        background: linear-gradient(to bottom, white, #eee 100%,  #eee 100%, #333 100%);    
+    }
+    .preview-list-container a:hover {
+        color: black; 
+    }
+    .preview-list-container a {
+        font-size: 150%;
+        color: #eee;   
+    }
+
+@media (max-width: 723px) {
+    .issue-card-grid-container {
+        padding: 0.5rem 0.5rem 1rem 0.5rem;
+        margin: 1rem;
+        height: 16rem;
+    }
+    .issue-image-grid-container {
+        padding: 0.5rem 0.5rem 1rem 0.5rem;
+        width: 8rem;
+        height: 15rem;
+    }
+    .issue-grid-image{  
+        width: 8em;
+        height: 10rem;
+    }
+    .preview-grid-container {
+        width: 9rem
+    }
+}
+@media (max-width: 435px) {
+    .issue-card-grid-container {
+        padding: 0.5rem 0.5rem 1rem 0.5rem;
+        margin: 0.5rem;
+        height: 13.5rem;
+    }
+    .issue-image-grid-container {
+        padding: 0.5rem 0.5rem 1rem 0.5rem;
+        width: 6rem;
+    }
+    .issue-grid-image{  
+        width: 6em;
+        height: 10rem;
+    }
+    .preview-grid-container {
+        width: 7rem;
+    }
+    .issue-image-grid-container {
+        overflow: hidden;
+        text-overflow: hidden;
+    }
+    .issue-image-grid-container h3{
+        font-size: 14.5px;
+    }
+    .issue-details-grid span{
+        display: none;
+    }
+    /* List */
+    .issue-details-list h3{
+        font-size: 15px;
+    }
+   
+}

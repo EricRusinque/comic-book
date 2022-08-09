@@ -1,0 +1,25 @@
+/*  Grid-Container */
+.comic-grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.change-order {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+
+}
+.change-order h3{
+    margin: 1rem;
+}
+
+/* List-Container */
+
+.comic-list-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}

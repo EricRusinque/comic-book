@@ -1,0 +1,13 @@
+.navbar-changes-icons {
+    margin: 1rem;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.list:hover {
+    color: white;
+}
+
+.grid:hover {
+    color: white;
+}
