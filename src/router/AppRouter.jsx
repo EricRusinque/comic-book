@@ -9,8 +9,8 @@ export const AppRouter = () => {
         <HashRouter>
             <h1 className='title'>ComicBook</h1>
             <Routes  >
-                <Route path='/' element={<IssuesScreen />}/>
-                <Route path='issue/:issueId' element={<IssueScreen />} />
+                <Route path='comic-book/' element={<IssuesScreen />}/>
+                <Route path='comic-book/issue/:issueId' element={<IssueScreen />} />
             </Routes>
         </HashRouter>
     );
