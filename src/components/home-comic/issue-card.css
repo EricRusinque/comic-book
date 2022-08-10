@@ -77,6 +77,8 @@
     }
     .preview-grid-container a {
         color: #eee;   
+        padding-right: 42%;
+        padding-left: 42%;
     }
 
 /* List */
@@ -178,6 +180,15 @@
     }
     .preview-grid-container {
         width: 9rem
+    }
+    .issue-image-grid-container {
+        overflow: hidden;
+        text-overflow: hidden;
+    }
+    .preview-grid-container a {
+        color: #eee;   
+        padding-right: 35%;
+        padding-left: 35%;
     }
 }
 @media (max-width: 435px) {

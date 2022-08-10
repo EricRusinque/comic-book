@@ -36,7 +36,11 @@
     padding: 10px;
     border: 1px solid black;
     width: 45%;
+    width: 70%;
+    margin-right: -80%!important;
+
 }
+
 .modal-details-container {
     display: flex;
   
@@ -49,7 +53,8 @@
     width: 50%;    
 }
 .modal-details-container div{
-    margin: 0.5rem;
+    padding: 0.5rem;
+    text-align: center;
 }
 .modal-details-container div h1{
     border-bottom: 1px solid black;
@@ -58,37 +63,56 @@
 
 .see-more {
     color: black;
-    width: 100%;
+    /* width: 80%; */
     transition: all 0.3s ease-in-out;
     border: 1px solid rgb(164, 160, 160);
     border-bottom: 1px solid rgb(164, 160, 160);
     font-weight: bold;
     z-index: 1;
+    margin-top: 3rem;
     background: linear-gradient(to top, white, #eee 100%,  #eee 100%, #333 100%);    
     transition: all 1s ease;
     text-align: center;
 }
     .see-more:hover {
-        color: black;
+        color: rgb(131, 121, 121);
         cursor: pointer;
         background: linear-gradient(to bottom, white, #eee 100%,  #eee 100%, #333 100%);    
-    
+        border-color: transparent transparent rgb(97, 87, 87) transparent;
     }
 .see-more a {
     font-size: 25px;
     color: black;
     transition: all 1s ease;
+    padding-right: 10rem;
+    padding-left: 10rem;
 }   
     .see-more a:hover {
-        border: 1px solid wheat;
-        color: rgb(179, 161, 129);
-    }
+        color: rgb(102, 95, 95);
+        transition: all 1s ease;
+
+    }       
+@media (max-width: 1593px) {
+    .see-more a {
+        font-size: 25px;
+        padding-right: 5rem;
+        padding-left: 5rem;
+    }   
+}
+@media (max-width: 1174px) {
+    .see-more a {
+        font-size: 20px;
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+    }  
+}
 
 @media (max-width: 810px) {
-    .modal {
-        width: 70%;
-        margin-right: -80%!important;
-    }
+    .see-more a {
+        font-size: 5px;
+        padding-right: 0.2rem;
+        padding-left: 0.2rem;
+    }  
     .details-containers h1{
         font-size: 20px;
     }
@@ -104,11 +128,13 @@
     }   
 }
 
-
+@media (max-width: 653px) {
+    .see-more a {
+        font-size: 15px;
+    }  
+}
 @media (max-width: 550px) {
-    .modal {
-        
-    }
+ 
     .details-containers h1{
         font-size: 10px;
     }

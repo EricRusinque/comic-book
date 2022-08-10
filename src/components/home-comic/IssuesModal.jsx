@@ -57,7 +57,7 @@ export const IssuesModal = () => {
                       <span>Click in See More...</span>
                       </div>
                       <button className='see-more'>
-                        <Link to={`/issue/${ comic.id }`} onClick={closeComicModal}>
+                        <Link  to={`/issue/${ comic.id }`} onClick={closeComicModal}>
                           See More...
                         </Link>                          
                        </button>              
