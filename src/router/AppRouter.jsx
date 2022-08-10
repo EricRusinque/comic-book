@@ -9,7 +9,7 @@ export const AppRouter = () => {
             <h1 className='title'>ComicBook</h1>
             <Routes>
                 <Route path='/' element={<IssuesScreen />}/>
-                <Route path='issue/:issueId' element={<IssueScreen />} />
+                <Route path='/issue/:issueId' element={<IssueScreen />} />
             </Routes>
         </HashRouter>
     );
